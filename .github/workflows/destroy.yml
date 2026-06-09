@@ -1,0 +1,11 @@
+name: Scheduled destroy
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 10pm UTC daily
+  workflow_dispatch:         # allow manual trigger
+
+jobs:
+  destroy-placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Auto-destroy — implemented in Week 4"

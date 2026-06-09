@@ -1,0 +1,12 @@
+name: CI
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+
+jobs:
+  ci-placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "CI pipeline — full implementation in Week 2"

@@ -1,0 +1,11 @@
+name: CD
+on:
+  push:
+    branches: [main]
+
+jobs:
+  cd-placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "CD pipeline — implemented in Week 3"
