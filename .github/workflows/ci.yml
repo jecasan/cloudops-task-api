@@ -101,7 +101,7 @@ jobs:
       - name: Trivy vulnerability scan
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: cloudops-task-api${{ github.sha }}
+          image-ref: cloudops-task-api:${{ github.sha }}
           format: table
           severity: CRITICAL
           exit-code: 1
