@@ -94,8 +94,8 @@ jobs:
           file: docker/Dockerfile
           push: false
           tags: cloudops-task-api:${{ github.sha }}
-          cache-from: type=gist
-          cache-to: type=gist,mode=max
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           load: true
 
       - name: Trivy vulnerability scan
