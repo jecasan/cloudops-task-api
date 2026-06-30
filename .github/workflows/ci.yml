@@ -106,6 +106,7 @@ jobs:
           severity: CRITICAL
           exit-code: 1
           ignore-unfixed: true
+          output: trivy-results.txt
 
       - name: Upload Trivy results
         uses: actions/upload-artifact@v4
